@@ -1,0 +1,35 @@
+
+.first-section .searchbar {
+  padding: 5% 10%;
+  padding-bottom: 0px;
+  color: #4a4a4a;
+}
+
+/* .first-section > .tagline {
+  max-width: 900px;
+  text-align: center;
+  font-size: 30px;
+  margin: 0px auto;
+  padding: 20px;
+} */
+
+.searchbar {
+  max-width: 1200px;
+  text-align: center;
+  margin:0 auto;
+}
+.searchbar .searchbar-description {
+  margin: 15px;
+  font-size: 30px;
+  margin-bottom: 0px;
+}
+
+.hospital-cards-container {
+  padding: 5%;
+}
+
+@media screen and (max-width: 768px) {
+  .searchbar .searchbar-description {
+    font-size: 20px;
+  }
+}

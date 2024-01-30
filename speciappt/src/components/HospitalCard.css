@@ -1,0 +1,78 @@
+.card-container {
+  padding: 2% 2%;
+  margin: 2% 10%;
+  border-radius: 10px;
+  box-shadow: 0 1px 1px -1px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
+  background-color: #ffffff;
+}
+.department-shape {
+  display: inline-block;
+  border: 1px solid gray;
+  border-radius: 20px;
+  padding: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+.card-container  .hospital-name {
+  color: #69d5b1;
+  font-size: 25px;
+}
+
+.card-container  .address {
+  color: gray;
+  margin: 5px 0px 20px 0px;
+}
+
+.card-container  .departments {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: #4a4a4a;
+}
+
+.card-container .timings {
+  position: relative;
+  color: #4a4a4a;
+}
+
+.card-container .book-button {
+  position: absolute;
+  top: 80px;
+  right: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    padding: 4% 2%;
+    margin: 3% 1%;
+  }
+
+  .card-container .timings {
+    position: relative;
+    text-align: left;
+  }
+  
+  .card-container .book-button {
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    text-align: left;
+    float: left;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card-container .timings {
+    text-align: left;
+  }
+  
+  .card-container .book-button {
+    position: inherit;
+    top: 0px;
+    right: 0px;
+    text-align: left;
+    float: left;
+  }
+}
+
