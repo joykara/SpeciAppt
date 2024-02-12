@@ -1,5 +1,4 @@
 import React from 'react';
-import 'tachyons';
 
 // This component displays the error message on screen
 // To display the error, you need to pass errorMessage as prop to this component

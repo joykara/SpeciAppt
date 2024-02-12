@@ -1,0 +1,467 @@
+.navbar{
+    /* position: relative;
+    z-index: 2; */
+    padding: 1rem 1rem 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-bg);
+    background: linear-gradient(0deg, #263738f7 10%, #111010 98.44%);
+}
+.navbar-hm__logo{
+    height: 50px;
+    width: 50px;
+}
+.navbar-hm__logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.navbar__logo,
+.navbar__menu-links-top{
+    display: flex;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: left;
+    cursor: pointer;
+}
+.navbar__logo button,
+.navbar__menu-links-top button{
+    left: 21px;
+    top: 14px;
+    margin: 0 20px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+.navbar__logo p,
+.navbar__menu-links-top p{
+    padding: 15px;
+    text-align: left;
+    background: #D9D9D9;
+}
+.navbar__menu{
+    margin-left: -12%;
+}
+.navbar__menu-content p,
+.navbar__menu-content-detail:nth-child(4) a,
+.navbar__menu-content-detail:nth-child(5) a{
+    margin-right: 3rem;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+.navbar__menu-content{
+    position: relative;
+    display: flex;
+    flex: 2;
+    justify-content: left;
+    align-items: flex-start;
+}
+.navbar__menu-content-detail{
+    padding: 20px 0;
+}
+.navbar__menu-content-detail:nth-child(4):hover a,
+.navbar__menu-content-detail:nth-child(5):hover a,
+#active-dropdown p,
+#active-dropdown p a {
+    color: var(--color-link);
+}
+
+/* .navbar__menu ul{
+    display: none;
+}
+.navbar__menu ul{
+    display: grid
+} */
+.navbar__menu p,
+.navbar__menu p a,
+.navbar__menu-content-detail a{
+    color: #fff;
+    font-family: 'Merriweather';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.navbar__menu-content p:hover,
+.navbar__menu-content p a:hover{
+    cursor: pointer;
+    color: var(--color-link);
+    transition: 0.3s ease-in-out;
+}
+.navbar__menu-content p span{
+    margin-left: 4px;
+    padding-top: -1rem;
+}
+.navbar__menu-content p span svg{
+    margin-bottom: -5px;
+}
+.navbar__menu .dropdown-menu{
+    display: none;
+}
+/* .navbar__menu a:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 1rem 0;
+  background: #fff;
+  z-index: 999;
+} */
+.navbar__search{
+    display: flex;
+    flex-direction: column;
+    justify-content:right;
+    align-items: flex-end;
+    margin-bottom: auto;
+    padding-top: 0;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+.navbar__search a,
+.navbar__search p{
+    color: #fff;
+    font-size: clamp(1.1rem, 1.3vw, 1.3rem);
+}
+.navbar__search a:hover,
+.navbar__search p:hover svg{
+    cursor: pointer;
+    fill: var(--color-link);
+    color: var(--color-link);
+}
+/* hamburger-menu nav */
+.navbar__menu-links{
+    display: none;
+}
+.navbar__menu-links.show{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+    z-index: 999;
+}
+.navbar__menu-links-top{
+    padding: 1rem 0;
+    border-bottom: 2px solid rgb(82, 88, 88);
+}
+.navbar__menu-links__container{
+    background: var(--color-bg);
+    width: 40%;
+}
+.navbar__menu-links__container .menu{
+    margin-top: 1rem;
+    text-align: left;
+}
+.navbar__menu-links__container .menu p,
+.navbar__menu-links__container .menu p a{
+    font-family: var(--links-font-family);
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 1rem 2rem;
+    color: #fff;
+}
+.menu .show-menu{
+    margin-left: 2rem;
+}
+.show-menu .active-link span{
+    color: var(--color-link);
+}
+.navbar__menu-links__container .menu .show-menu p{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar__menu-links__container .menu p span{
+    font-family: var(--links-font-family);
+}
+.navbar__menu-links__container .menu a:hover,
+.navbar__menu-links__container .menu p:hover{
+    cursor: pointer;
+    color:  var(--color-link)
+}
+.navbar__menu-links__details{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.hm-search-bar{
+    width: 100%;
+}
+.navbar__menu-links__search{
+    display: flex;
+    padding-bottom: 1rem;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.4);
+}
+.navbar__menu-links__search input {
+    width: 100%;
+    height: 80px;
+    margin: auto 0;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    padding: 0 2.5rem;
+}
+/* boxshadow on focus */
+/* 
+.navbar__menu-links__search input:focus {
+    box-shadow: 0px 16px 32px -1px rgba(5,28,44,.2),0px 0px 1px 0px rgba(5,28,44,.15);
+} */
+.navbar__menu-links__search button{
+    background: none;
+    border: none;
+    padding-right: 1rem;
+}
+.navbar__menu-links__search-results__container{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    background: transparent;
+    z-index: 999;
+}
+.navbar__menu-links__search-results__container.display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dro
+.navbar__menu-links__search input{
+    width: 100%;
+    height: 50px;
+    margin: auto 0;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    padding: 0 2rem ;
+}
+.navbar__menu-links__search button{
+    background: none;
+    border: none;
+    padding-right: 1rem;
+}
+.navbar__menu-link__content{
+    background: #f3f3f3;
+    height: 100%;
+}
+.drop-down-menu,
+.drop-down-menu2,
+.drop-down-menu3,
+.drop-down-menu4{
+    display: flex;
+    position: absolute;
+    padding: .5rem 0 1rem 0;
+    margin-top: 1rem;
+    margin-left: -2rem;
+    background: #ffffff;
+    z-index: 999;
+    visibility: hidden;
+}
+.drop-down-menu.active,
+.drop-down-menu2.active2,
+.drop-down-menu3.active3,
+.drop-down-menu4.active4{
+    visibility: visible;
+}
+.drop-down-menu4.active4{
+    padding: 0;
+    width: 45%;
+}
+.drop-down-menu3.active3{
+    margin-left: .5rem;
+}
+
+.drop-down-menu-container h3{
+    display: none;
+}
+.drop-down-menu-container ul{
+    column-gap: 1rem;
+}
+.industries-list{
+    display: grid;
+}
+.drop-down-menu-container .featured-insights-list h3,
+.drop-down-menu-container .featured-insights-list p{
+    display: none;
+}
+.drop-down-menu-container .featured-insights-list,
+.drop-down-menu-container .about-us-list{
+    padding: .5rem 1rem;
+    width: 100%;
+}
+.drop-down-menu-container .featured-insights-list ul{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    padding: 0;
+    width: 100%;
+}
+.drop-down-menu-container .industries-list ul{
+    font-size: 16px;
+    padding: 0;
+    width: 100%;
+}
+.drop-down-menu-container .services-list{
+    padding: 0 1rem;
+}
+.drop-down-menu-container .about-us-list #about-title{
+    border: none;
+}
+.drop-down-menu-container .about-us-list #sections{
+    padding: 0;
+}
+.drop-down-menu-container .about-us-sections:nth-child(1){
+    padding-right: 3rem;
+}
+.drop-down-menu-container .about-us-sections:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    width: 100%;
+    padding-left: 2.5rem;
+}
+.drop-down-menu-container .about-us-sections h4{
+    width: 100%;
+}
+.drop-down-menu-container .about-us-sections p{
+    margin: 0;
+}
+.drop-down-menu-container .about-us-sections:nth-child(1) p{
+    width: 100%;
+}
+.drop-down-menu-container .about-us-sections a{
+    color: var(--color-bg);
+    padding: 0;
+    font-family: var(--links-font-family);
+}
+
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 1440px){
+    .navbar__menu p,
+    .navbar__menu p a,
+    .navbar__menu-content-detail a{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 1370px){
+    .about-us-list #sections .about-us-sections h4{
+        width:50%;
+    }
+    .navbar__menu{
+        margin-left: .3rem;
+    }
+}
+@media screen and (max-width: 1260px){
+    .navbar__menu{
+        display: none;
+    }
+}
+@media screen and (max-width: 1086px){
+    .navbar__menu-links-top button{
+        margin: 0 10px;
+    }
+    .menu .show-menu{
+        margin: 0;
+    }
+    .navbar__menu-links__container .menu p{
+        margin: 1rem 1rem;
+    }
+    .navbar__menu-links__container .menu p a{
+        margin: 0;
+    }
+    .navbar__menu-link__content .industries-list{
+        padding: 0 1rem;
+        align-items: flex-start;
+    }
+    .navbar__menu-link__content .industries-list ul{
+        padding: 0;
+        grid-template-columns: auto auto;
+    }
+    .navbar__menu-link__content .services-list{
+        padding: 0 2rem;
+    }
+    .navbar__menu-link__content .services-list h3{
+        width: 70%;
+    }
+    .navbar__menu-link__content .featured-insights-list{
+        padding: 1rem 2rem;
+    }
+    .navbar__menu-link__content .featured-insights-list p,
+    .navbar__menu-link__content .featured-insights-list ul{
+        padding: 0.5rem;
+    }
+    .navbar__menu-link__content .featured-insights-list ul{
+        width: 100%;
+    }
+
+}
+@media screen and (max-width: 786px){
+    .navbar__menu-links__container .menu{
+        margin: 1rem 2rem;
+    }
+    .navbar__menu-links__details{
+        display: none;
+    }
+    .navbar__menu-links__container{
+        width: 100%;
+    }
+    .navbar__menu-links .show-menu p {
+      display: block;
+    }
+    .navbar__menu-links .show-menu .navbar__mini-menu-content{
+        display: none;
+    }
+    .navbar__menu-links .show-menu .navbar__mini-menu-content.active{
+        position: absolute;
+        z-index: 999;
+        display: flex;
+        flex-direction: column;
+        background: #ffffff;
+        width: 100%;
+        top: 6rem;
+        left: 0;
+    }
+    .navbar__mini-menu-content.active p,
+    .navbar__mini-menu-content.active p a{
+        color: #000000;
+    }
+    .navbar__mini-menu-content.active h4{
+        padding: 1rem;
+    }
+    .navbar__mini-menu-content.active h4:hover{
+        cursor: pointer;
+        color: var(--color-link);
+        border: 1px dotted var(--color-bg);
+    }
+    .navbar__mini-menu-content.active h4 span{
+        padding: 1rem;
+    }
+    .navbar__mini-menu-content.active h4:hover svg{
+        fill: var(--color-link);
+    }
+    .navbar__mini-menu-content .industries-list
+    .navbar__search{
+        display: none;
+    }
+    .about-us-list{
+        padding: 0;
+    }
+    .about-us-list #sections{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-us-list #sections .about-us-sections h4{
+        width: 80%;
+    }
+}
+
+@media (min-width: 768px) {
+  .navbar__menu-links .show-menu .navbar__mini-menu-content {
+    display: none;
+  }
+}
+
